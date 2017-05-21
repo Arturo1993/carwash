@@ -1,5 +1,5 @@
 <?php
-include ("head.php");
+include ("head_out.php");
 
 session_start();
 

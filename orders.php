@@ -9,7 +9,7 @@ if(isset($_POST['ord_id']) && $_POST['ord_id'] != "" && isset($_POST['fin_time']
     $ordersUpdate = mysqli_prepare($mysql, "UPDATE orders SET Time_end = ?, endcrew_id = ? WHERE idOrders = ?")or die( mysqli_error($mysql) );
     mysqli_stmt_bind_param($ordersUpdate, "ssi", $_POST['fin_time'], $_POST['end_crew'], $_POST['ord_id']);
     if (mysqli_stmt_execute($ordersUpdate)) {
-        echo "<div class='res'>'ჩაწერა ხოშიანად'</div>";
+        echo "<div class='res'>'შეკვეთა დასრულებულია'</div>";
     } else {
         echo "<div class='res'>'რაღაც ვვერ წერს ჩახედე აბა'</div>";
     }

@@ -129,6 +129,11 @@ while ($row = $result->fetch_assoc()) {
                 }
             });
         });
+
+//        $("#lic").on("keyup", function() {
+//            alert($(this).val());
+//        });
+
     });
 </script>
 <form action="" method="post">
@@ -145,6 +150,11 @@ while ($row = $result->fetch_assoc()) {
                 } ?>
             </select>
         </div>
+<!--        <div class="form-group">-->
+<!--            <label>ავტომობილის ნომერი:</label>-->
+<!--            <input type="text" class="form-control" id="lic">-->
+<!--            <div id="dropdown"></div>-->
+<!--        </div>-->
         <div class="form-group">
             <label>მრეცხავი:</label>
             <select class="form-control" id="sel2" required>
