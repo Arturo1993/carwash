@@ -74,7 +74,7 @@ if(isset($_POST['ord_id']) && $_POST['ord_id'] != "" && isset($_POST['fin_time']
                             data: { ord_id: order_id, fin_time: time, end_crew: crew_manager_id },
                             success: function (response) {
                                 alert($(response).filter('div.res').text());
-                                location.reload();
+                                location.reload(); location;
                             }
                         });
                     });
